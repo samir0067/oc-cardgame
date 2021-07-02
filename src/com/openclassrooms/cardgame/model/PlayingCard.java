@@ -5,7 +5,6 @@ public class PlayingCard {
     private final Suit suit;
     private boolean faceUp;
 
-
     public PlayingCard(Rank rank, Suit suit) {
         super();
         this.rank = rank;

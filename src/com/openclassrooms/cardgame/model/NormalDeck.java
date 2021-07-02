@@ -3,7 +3,6 @@ package com.openclassrooms.cardgame.model;
 import java.util.ArrayList;
 
 public class NormalDeck extends Deck {
-
     public NormalDeck() {
         cards = new ArrayList<PlayingCard>();
         for (Rank rank : Rank.values()) {

@@ -4,7 +4,7 @@ import com.openclassrooms.cardgame.controller.GameController;
 
 import java.util.Scanner;
 
-public class CommandLineViewImpl implements GameViewable {
+public class CommandLineView implements GameViewable {
 
     GameController controller;
     Scanner keyboard = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class CommandLineViewImpl implements GameViewable {
         if (name.isEmpty()) {
             controller.startGame();
         } else {
-            controller.addPLayer(name);
+            controller.addPlayer(name);
         }
     }
 
@@ -43,8 +43,7 @@ public class CommandLineViewImpl implements GameViewable {
     }
 
     public void showFaceDownCardForPlayer(int i, String playerName) {
-        System.out.println("[" + playerName + "][" + playerName + "][x][x]");
-
+        System.out.println("[" + i + "][" + playerName + "][x][x]");
     }
 
     public void showCardForPlayer(int i, String playerName, String rank, String suit) {

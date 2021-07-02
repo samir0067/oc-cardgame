@@ -5,7 +5,7 @@ import com.openclassrooms.cardgame.model.PlayingCard;
 
 import java.util.List;
 
-public class LowCardGamesEvaluatorImpl implements GameEvaluator {
+public class LowCardGameEvaluator implements GameEvaluator {
     @Override
     public Player evaluateWinner(List<Player> players) {
         Player bestPlayer = null;
@@ -40,6 +40,5 @@ public class LowCardGamesEvaluatorImpl implements GameEvaluator {
         }
 
         return bestPlayer;
-
     }
 }

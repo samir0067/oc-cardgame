@@ -5,14 +5,13 @@ import com.openclassrooms.cardgame.controller.GameController;
 import javax.swing.*;
 import java.awt.*;
 
-
-public class GameSwingViewImpl implements GameViewable {
+public class GameSwingView implements GameViewable {
 
     GameController controller;
     JTextArea textArea;
     JFrame frame;
 
-    public void createAndShowGraphicalUserInterface() {
+    public void createAndShowGUI() {
 
         // Créer le cadre principal
         frame = new JFrame("MVC-SOLID-Game");
@@ -21,7 +20,7 @@ public class GameSwingViewImpl implements GameViewable {
 
         // affichage vertical
         Container contentPane = frame.getContentPane();
-        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.X_AXIS));
+        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
 
         addControllerCommandTracker(contentPane);
 

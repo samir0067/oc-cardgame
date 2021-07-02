@@ -6,7 +6,6 @@ import com.openclassrooms.cardgame.model.SmallDeck;
 import com.openclassrooms.cardgame.model.TestDeck;
 
 public class DeckFactory {
-
     public enum DeckType {
         Normal,
         Small,
